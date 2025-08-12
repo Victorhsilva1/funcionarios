@@ -3,33 +3,39 @@
 import funcionarios from "./funcionarios.json" with {type: "json"}
 
 
-function criarContainer (imagem) {
-    const galeria = document.getElementById('galeria');
+// function criarContainer (imagem) {
+//     const funcionarios = document.getElementById('funcionarios');
 
     
-    const itemGaleria = document.createElement('div');
-    itemGaleria.classList.add('item-galeria');
+//     const itemContainer = document.createElement('div');
+//     itemContainer.classList.add('card');
 
-
-    const novaImagem = document.createElement('img');
-    novaImagem.src = imagem.url;
-   
-
+//     const novaImagem = document.createElement('img');
+//     novaImagem.src = imagem.imagem; 
+//     novaImagem.alt = imagem.nome;
   
-    const nome = document.createElement('span');
-    nome.classList.add('legenda');
-    nome.textContent = imagem.nome;
+//     const nome = document.createElement('p');
+//     nome.classList.add('nome');
+//     nome.textContent = imagem.nome;
+
+//     const cargo = document.createElement('span');
+//     cargo.classList.add('cargo');
+//     cargo.textContent = imagem.cargo;
 
     
-    itemGaleria.appendChild(novaImagem);
-    itemGaleria.appendChild(nome);
+//     itemContainer.appendChild(novaImagem);
+//     itemContainer.appendChild(nome);
+//     itemContainer.appendChild(cargo);
 
-   
-    galeria.appendChild(itemGaleria);
-}
+//     container.appendChild(itemContainer);
+// }
 
-function carregarGaleria() {
-    imagens.forEach(criarItemGaleria);
-}
+// function carregarFuncionarios() {
+//     funcionarios.forEach(criarContainer);
+// }
 
-carregarGaleria();
+// criarContainer(imagem);
+funcionarios.forEach((funcionario)=>{
+    console.log(funcionario.nome)
+    
+});
